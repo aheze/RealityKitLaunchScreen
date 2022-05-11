@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		3C13D15E282B2F3F00ABF44B /* RealityKitLaunchScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D15D282B2F3F00ABF44B /* RealityKitLaunchScreenApp.swift */; };
 		3C13D160282B2F3F00ABF44B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D15F282B2F3F00ABF44B /* ContentView.swift */; };
-		3C13D162282B2F4100ABF44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C13D161282B2F4100ABF44B /* Assets.xcassets */; };
-		3C13D165282B2F4100ABF44B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C13D164282B2F4100ABF44B /* Preview Assets.xcassets */; };
+		3C13D176282B2F8100ABF44B /* LaunchConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D16C282B2F8100ABF44B /* LaunchConstants.swift */; };
+		3C13D178282B2F8100ABF44B /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D16E282B2F8100ABF44B /* LaunchViewModel.swift */; };
+		3C13D17A282B2F8100ABF44B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D170282B2F8100ABF44B /* LaunchViewController.swift */; };
+		3C13D17B282B2F8100ABF44B /* LaunchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D171282B2F8100ABF44B /* LaunchModels.swift */; };
+		3C13D17E282B2F8100ABF44B /* LaunchVC+Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D174282B2F8100ABF44B /* LaunchVC+Scene.swift */; };
+		3C13D180282B304400ABF44B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C13D17F282B304400ABF44B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C13D15A282B2F3F00ABF44B /* RealityKitLaunchScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityKitLaunchScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C13D15D282B2F3F00ABF44B /* RealityKitLaunchScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitLaunchScreenApp.swift; sourceTree = "<group>"; };
 		3C13D15F282B2F3F00ABF44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3C13D161282B2F4100ABF44B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C13D164282B2F4100ABF44B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C13D16C282B2F8100ABF44B /* LaunchConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchConstants.swift; sourceTree = "<group>"; };
+		3C13D16E282B2F8100ABF44B /* LaunchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		3C13D170282B2F8100ABF44B /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		3C13D171282B2F8100ABF44B /* LaunchModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchModels.swift; sourceTree = "<group>"; };
+		3C13D174282B2F8100ABF44B /* LaunchVC+Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LaunchVC+Scene.swift"; sourceTree = "<group>"; };
+		3C13D17F282B304400ABF44B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +60,15 @@
 			isa = PBXGroup;
 			children = (
 				3C13D15D282B2F3F00ABF44B /* RealityKitLaunchScreenApp.swift */,
+				3C13D16E282B2F8100ABF44B /* LaunchViewModel.swift */,
 				3C13D15F282B2F3F00ABF44B /* ContentView.swift */,
-				3C13D161282B2F4100ABF44B /* Assets.xcassets */,
-				3C13D163282B2F4100ABF44B /* Preview Content */,
+				3C13D16C282B2F8100ABF44B /* LaunchConstants.swift */,
+				3C13D171282B2F8100ABF44B /* LaunchModels.swift */,
+				3C13D170282B2F8100ABF44B /* LaunchViewController.swift */,
+				3C13D174282B2F8100ABF44B /* LaunchVC+Scene.swift */,
+				3C13D17F282B304400ABF44B /* Utilities.swift */,
 			);
 			path = RealityKitLaunchScreen;
-			sourceTree = "<group>";
-		};
-		3C13D163282B2F4100ABF44B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3C13D164282B2F4100ABF44B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +129,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C13D165282B2F4100ABF44B /* Preview Assets.xcassets in Resources */,
-				3C13D162282B2F4100ABF44B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +139,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C13D176282B2F8100ABF44B /* LaunchConstants.swift in Sources */,
 				3C13D160282B2F3F00ABF44B /* ContentView.swift in Sources */,
 				3C13D15E282B2F3F00ABF44B /* RealityKitLaunchScreenApp.swift in Sources */,
+				3C13D17E282B2F8100ABF44B /* LaunchVC+Scene.swift in Sources */,
+				3C13D178282B2F8100ABF44B /* LaunchViewModel.swift in Sources */,
+				3C13D180282B304400ABF44B /* Utilities.swift in Sources */,
+				3C13D17A282B2F8100ABF44B /* LaunchViewController.swift in Sources */,
+				3C13D17B282B2F8100ABF44B /* LaunchModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +274,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RealityKitLaunchScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = YA533DMD5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -275,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RealityKitLaunchScreen/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = YA533DMD5J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -304,6 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
